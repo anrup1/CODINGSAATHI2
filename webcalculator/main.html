@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1>web calculator</h1>
+    <div class="calculator">
+      <input type="text" id="answer" />
+      <div class="row">
+        <input type="button" value="7" onclick="appendToAnswer('7')" />
+        <input type="button" value="8" onclick="appendToAnswer('8')" />
+        <input type="button" value="9" onclick="appendToAnswer('9')" />
+        <input type="button" value="/" onclick="appendToAnswer('/')" />
+      </div>
+      <div class="row">
+        <input type="button" value="4" onclick="appendToAnswer('4')" />
+        <input type="button" value="5" onclick="appendToAnswer('5')" />
+        <input type="button" value="6" onclick="appendToAnswer('6')" />
+        <input type="button" value="*" onclick="appendToAnswer('*')" />
+      </div>
+      <div class="row">
+        <input type="button" value="1" onclick="appendToAnswer('1')" />
+        <input type="button" value="2" onclick="appendToAnswer('2')" />
+        <input type="button" value="3" onclick="appendToAnswer('3')" />
+        <input type="button" value="-" onclick="appendToAnswer('-')" />
+      </div>
+      <div class="row">
+        <input type="button" value="0" onclick="appendToAnswer('0')" />
+        <input type="button" value="." onclick="appendToAnswer('.')" />
+        <input type="button" value="=" onclick="calculateAnswer()" />
+        <input type="button" value="+" onclick="appendToAnswer('+')" />
+      </div>
+      <div class="row">
+        <input type="button" value="C" onclick="clearAnswer()" />
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
